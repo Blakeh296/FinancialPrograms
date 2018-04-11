@@ -1,0 +1,10 @@
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\bin\Debug\FinancePrograms.exe.config
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\bin\Debug\FinancePrograms.exe
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\bin\Debug\FinancePrograms.pdb
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\Morgage Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\FinancePrograms.Form1.resources
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\FinancePrograms.Properties.Resources.resources
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\Morgage Calculator.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\Morgage Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\FinancePrograms.exe
+C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\FinancePrograms\obj\Debug\FinancePrograms.pdb
