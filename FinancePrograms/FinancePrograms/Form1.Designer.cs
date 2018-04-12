@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblLoanAsk = new System.Windows.Forms.TextBox();
+            this.lblDownPayment = new System.Windows.Forms.TextBox();
+            this.lblLoanLength = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,30 +43,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lblAmountLoaned = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // lblLoanAsk
             // 
-            this.textBox1.Location = new System.Drawing.Point(234, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.lblLoanAsk.Location = new System.Drawing.Point(234, 96);
+            this.lblLoanAsk.Name = "lblLoanAsk";
+            this.lblLoanAsk.Size = new System.Drawing.Size(100, 20);
+            this.lblLoanAsk.TabIndex = 0;
             // 
-            // textBox2
+            // lblDownPayment
             // 
-            this.textBox2.Location = new System.Drawing.Point(234, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.lblDownPayment.Location = new System.Drawing.Point(234, 151);
+            this.lblDownPayment.Name = "lblDownPayment";
+            this.lblDownPayment.Size = new System.Drawing.Size(100, 20);
+            this.lblDownPayment.TabIndex = 1;
             // 
-            // textBox3
+            // lblLoanLength
             // 
-            this.textBox3.Location = new System.Drawing.Point(233, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.lblLoanLength.Location = new System.Drawing.Point(233, 177);
+            this.lblLoanLength.Name = "lblLoanLength";
+            this.lblLoanLength.Size = new System.Drawing.Size(100, 20);
+            this.lblLoanLength.TabIndex = 2;
             // 
             // textBox4
             // 
@@ -185,12 +185,12 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Interest output :";
             // 
-            // textBox5
+            // lblAmountLoaned
             // 
-            this.textBox5.Location = new System.Drawing.Point(233, 122);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 15;
+            this.lblAmountLoaned.Location = new System.Drawing.Point(233, 122);
+            this.lblAmountLoaned.Name = "lblAmountLoaned";
+            this.lblAmountLoaned.Size = new System.Drawing.Size(100, 20);
+            this.lblAmountLoaned.TabIndex = 15;
             // 
             // label9
             // 
@@ -208,7 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 458);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.lblAmountLoaned);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -221,9 +221,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblLoanLength);
+            this.Controls.Add(this.lblDownPayment);
+            this.Controls.Add(this.lblLoanAsk);
             this.Name = "Form1";
             this.Text = "Morgage Calculator";
             this.ResumeLayout(false);
@@ -233,9 +233,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox lblLoanAsk;
+        private System.Windows.Forms.TextBox lblDownPayment;
+        private System.Windows.Forms.TextBox lblLoanLength;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -248,7 +248,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox lblAmountLoaned;
         private System.Windows.Forms.Label label9;
     }
 }

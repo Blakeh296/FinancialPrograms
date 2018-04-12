@@ -20,25 +20,32 @@ namespace CompoundInterest
         private void button1_Click(object sender, EventArgs e)
         {
             // Basic variables
+            // P is the principle
             double P;
-            double r;
-            double n;
+            // r is the amount of money the person wants to deposit
+            double monthlyContribution;
+            // n is the total number of years
+            double numberofYears;
+            // Interest rate picked by the user
             double INTEREST_RATE;
+            // totalContribution is how much money you would have deposited over time without interest
             double totalContribution;
+            // Total money earned from interest alone
             double totalInterest;
+            // we us little r to determine compound frequency with big r
             double R;
             
             try
             {
-                // P is the principle
+                
                 
                 P = double.Parse(tbInitialDeposit.Text);
                 // N is total years
-                n = double.Parse(tbNumberofYears.Text);
+                numberofYears = double.Parse(tbNumberofYears.Text);
                 // Get the interest rate / 100
                 INTEREST_RATE = double.Parse(tbInterestRate.Text) / 100;
                 // r is how much you want to deposit per month
-                r = double.Parse(tbmonthlyContribution.Text);
+                monthlyContribution = double.Parse(tbmonthlyContribution.Text);
                 
                 
                 
@@ -51,19 +58,19 @@ namespace CompoundInterest
                     double c = 1;
 
                     // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, n, INTEREST_RATE, r, c);
+                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
 
                     // R is how frequently to deposit per year
-                    R = (r * 6);
+                    R = (monthlyContribution * 6);
                     // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * n);
+                    totalContribution = (R * numberofYears);
                     // interest rate divided by how often to compound
                     double ic = INTEREST_RATE / c;
 
                     // Body of the left side of the equation
                     double body = 1 + ic;
                     // exponent for the left side of the equation
-                    double exponent = n * c;
+                    double exponent = numberofYears * c;
                     // using math.pow to execute the math in the proper order and to save all that in one variable
                     double Body1 = P * Math.Pow(body, exponent);
                     // we reuse the math.pow to save the same results again seperate from the first
@@ -81,7 +88,7 @@ namespace CompoundInterest
 
                     totalInterest = FV - (P + totalContribution);
 
-                    listBox1.Items.Add("< Calculations for " + n.ToString() + " years > " + cbTimesPerYear.Text);
+                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
                     listBox1.Items.Add("Predicted Account Value  :");
                     // CONVERSION CLASS IS OUTPUT HERE
                     listBox1.Items.Add(conversion.ToString("c"));
@@ -114,19 +121,19 @@ namespace CompoundInterest
                     double c = 2;
 
                     // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, n, INTEREST_RATE, r, c);
+                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
 
                     // R is how frequently to deposit per year
-                    R = (r * 6);
+                    R = (monthlyContribution * 6);
                     // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * n);
+                    totalContribution = (R * numberofYears);
                     // interest rate divided by how often to compound
                     double ic = INTEREST_RATE / c;
 
                     // Body of the left side of the equation
                     double body = 1 + ic;
                     // exponent for the left side of the equation
-                    double exponent = n * c;
+                    double exponent = numberofYears * c;
                     // using math.pow to execute the math in the proper order and to save all that in one variable
                     double Body1 = P * Math.Pow(body, exponent);
                     // we reuse the math.pow to save the same results again seperate from the first
@@ -144,7 +151,7 @@ namespace CompoundInterest
 
                     totalInterest = FV - (P + totalContribution);
 
-                    listBox1.Items.Add("< Calculations for " + n.ToString() + " years > " + cbTimesPerYear.Text);
+                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
                     listBox1.Items.Add("Predicted Account Value  :");
                     // CONVERSION CLASS IS OUTPUT HERE
                     listBox1.Items.Add(conversion.ToString("c"));
@@ -176,19 +183,19 @@ namespace CompoundInterest
                     double c = 4;
 
                     // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, n, INTEREST_RATE, r, c);
+                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
 
                     // R is how frequently to deposit per year
-                    R = (r * 6);
+                    R = (monthlyContribution * 6);
                     // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * n);
+                    totalContribution = (R * numberofYears);
                     // interest rate divided by how often to compound
                     double ic = INTEREST_RATE / c;
 
                     // Body of the left side of the equation
                     double body = 1 + ic;
                     // exponent for the left side of the equation
-                    double exponent = n * c;
+                    double exponent = numberofYears * c;
                     // using math.pow to execute the math in the proper order and to save all that in one variable
                     double Body1 = P * Math.Pow(body, exponent);
                     // we reuse the math.pow to save the same results again seperate from the first
@@ -206,7 +213,7 @@ namespace CompoundInterest
 
                     totalInterest = FV - (P + totalContribution);
 
-                    listBox1.Items.Add("< Calculations for " + n.ToString() + " years > " + cbTimesPerYear.Text);
+                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
                     listBox1.Items.Add("Predicted Account Value  :");
                     // CONVERSION CLASS IS OUTPUT HERE
                     listBox1.Items.Add(conversion.ToString("c"));
@@ -239,19 +246,19 @@ namespace CompoundInterest
                     double c = 12;
 
                     // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, n, INTEREST_RATE, r, c);
+                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
 
                     // R is how frequently to deposit per year
-                    R = (r * 6);
+                    R = (monthlyContribution * 6);
                     // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * n);
+                    totalContribution = (R * numberofYears);
                     // interest rate divided by how often to compound
                     double ic = INTEREST_RATE / c;
 
                     // Body of the left side of the equation
                     double body = 1 + ic;
                     // exponent for the left side of the equation
-                    double exponent = n * c;
+                    double exponent = numberofYears * c;
                     // using math.pow to execute the math in the proper order and to save all that in one variable
                     double Body1 = P * Math.Pow(body, exponent);
                     // we reuse the math.pow to save the same results again seperate from the first
@@ -269,7 +276,7 @@ namespace CompoundInterest
 
                     totalInterest = FV - (P + totalContribution);
 
-                    listBox1.Items.Add("< Calculations for " + n.ToString() + " years > " + cbTimesPerYear.Text);
+                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
                     listBox1.Items.Add("Predicted Account Value  :");
                     // CONVERSION CLASS IS OUTPUT HERE
                     listBox1.Items.Add(conversion.ToString("c"));
@@ -307,7 +314,7 @@ namespace CompoundInterest
 
                 // Suggestions for why the code stopped working
                 MessageBox.Show(ex.Message);
-                listBox1.Items.Add("< * ERROR TIPS * >");
+                listBox1.Items.Add("< ERROR TIPS >");
                 listBox1.Items.Add(" ");
                 listBox1.Items.Add("1. NUMBERS ONLY");
                 listBox1.Items.Add(" ");

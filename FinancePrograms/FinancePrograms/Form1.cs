@@ -29,11 +29,11 @@ namespace FinancePrograms
             decimal MonthlyPayment;
 
             // Set Ask == to the first textbox
-            OriginalAmount = decimal.Parse(textBox1.Text);
+            OriginalAmount = decimal.Parse(lblLoanAsk.Text);
             // Set downpayment == to the second textbox
-            downpayment = decimal.Parse(textBox2.Text);
+            downpayment = decimal.Parse(lblDownPayment.Text);
             // Loan Lenght == textbox 3
-            LoanLength = decimal.Parse(textBox3.Text);
+            LoanLength = decimal.Parse(lblLoanLength.Text);
             if (LoanLength >= 12)
             {
                 LoanLength = LoanLength / 12;
