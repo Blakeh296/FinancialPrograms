@@ -8,3 +8,13 @@ C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\Compou
 C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.csproj.CoreCompileInputs.cache
 C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.exe
 C:\Users\Cyberadmin\Documents\Visual Studio 2017\Projects\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.pdb
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\bin\Debug\CompoundInterest.exe.config
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\bin\Debug\CompoundInterest.exe
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\bin\Debug\CompoundInterest.pdb
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.csprojResolveAssemblyReference.cache
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.Form1.resources
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.Properties.Resources.resources
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.exe
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\CompoundInterest\obj\Debug\CompoundInterest.pdb

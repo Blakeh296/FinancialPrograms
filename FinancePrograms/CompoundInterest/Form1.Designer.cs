@@ -65,17 +65,18 @@
             this.tbNumberofYears.Location = new System.Drawing.Point(158, 164);
             this.tbNumberofYears.Name = "tbNumberofYears";
             this.tbNumberofYears.Size = new System.Drawing.Size(100, 20);
-            this.tbNumberofYears.TabIndex = 2;
+            this.tbNumberofYears.TabIndex = 4;
             // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(264, 65);
             this.listBox1.Name = "listBox1";
             this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listBox1.Size = new System.Drawing.Size(242, 148);
+            this.listBox1.Size = new System.Drawing.Size(304, 148);
             this.listBox1.TabIndex = 4;
             // 
             // button1
@@ -133,7 +134,7 @@
             this.tbmonthlyContribution.Location = new System.Drawing.Point(158, 110);
             this.tbmonthlyContribution.Name = "tbmonthlyContribution";
             this.tbmonthlyContribution.Size = new System.Drawing.Size(100, 20);
-            this.tbmonthlyContribution.TabIndex = 10;
+            this.tbmonthlyContribution.TabIndex = 2;
             // 
             // label5
             // 
@@ -156,44 +157,44 @@
             this.cbTimesPerYear.Location = new System.Drawing.Point(158, 137);
             this.cbTimesPerYear.Name = "cbTimesPerYear";
             this.cbTimesPerYear.Size = new System.Drawing.Size(100, 21);
-            this.cbTimesPerYear.TabIndex = 12;
+            this.cbTimesPerYear.TabIndex = 3;
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.SystemColors.Info;
+            this.label6.BackColor = System.Drawing.SystemColors.HighlightText;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(-1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(519, 36);
+            this.label6.Size = new System.Drawing.Size(582, 36);
             this.label6.TabIndex = 13;
             this.label6.Text = "Compound Interest Calculator";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblErrorHandler
             // 
-            this.lblErrorHandler.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorHandler.Location = new System.Drawing.Point(264, 39);
+            this.lblErrorHandler.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorHandler.Location = new System.Drawing.Point(264, 36);
             this.lblErrorHandler.Name = "lblErrorHandler";
-            this.lblErrorHandler.Size = new System.Drawing.Size(242, 23);
+            this.lblErrorHandler.Size = new System.Drawing.Size(304, 23);
             this.lblErrorHandler.TabIndex = 14;
             this.lblErrorHandler.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(350, 219);
+            this.button2.Location = new System.Drawing.Point(403, 219);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(431, 219);
+            this.button3.Location = new System.Drawing.Point(493, 219);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
+            this.button3.TabIndex = 7;
             this.button3.Text = "Close";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -202,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 252);
+            this.ClientSize = new System.Drawing.Size(580, 252);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblErrorHandler);
@@ -221,6 +222,7 @@
             this.Controls.Add(this.tbInitialDeposit);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
