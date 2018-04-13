@@ -25,6 +25,8 @@ namespace FinancePrograms
             double loanLength = 0;
             double monthlyPayment;
             double totalInterest;
+            double totalPayment;
+            DateTime startDate;
 
             try
             {
@@ -45,10 +47,7 @@ namespace FinancePrograms
                 { 
                     loanLength = double.Parse(comboBox2.Text.ToString());
                 }
-                else if (comboBox2.Text == "Years" || comboBox2.Text == "Months")
-                {
-                    MessageBox.Show("You cant click 'Years' or 'Months'");
-                }
+                
 
                 // INTEREST_RATE == textbox 4 
                 INTEREST_RATE = double.Parse(tbInterest.Text) / 100 / 12;
@@ -60,19 +59,38 @@ namespace FinancePrograms
                 // total interest to display to the user
                 totalInterest = ((monthlyPayment * loanLength) - (Principle + downpayment));
 
-                
+                totalPayment = (monthlyPayment * loanLength);
+
+                startDate = DateTime.Parse(lblStartDate.Text);
+                DateTime PayoffDate = startDate.AddMonths((int)loanLength);
+
+                // Display variables to the user
                 listBox1.Items.Add("Monthly Payment = " + monthlyPayment.ToString("c"));
                 listBox1.Items.Add("Total Interest = " + totalInterest.ToString("c"));
+                listBox1.Items.Add("Out of Pocket Expense = " + totalPayment.ToString("c"));
+                listBox1.Items.Add("Pay off Date = " + PayoffDate.ToShortDateString());
+                listBox1.Items.Add(" ");
+
+                lblErrorHandler.ForeColor = System.Drawing.Color.Black;
+                lblErrorHandler.Text = "! Success !";
+                lblTitle.BackColor = System.Drawing.Color.LightGreen;
+                
             }
             catch (Exception ex)
             {
                 // If one of the wrong combo box options is picked, display specific error message
                 if (comboBox2.Text == "Years" || comboBox2.Text == "Months")
                 {
-                    MessageBox.Show("You cant click 'Years' or 'Months'");
+                    lblTitle.BackColor = System.Drawing.Color.Red;
+                    lblErrorHandler.ForeColor = System.Drawing.Color.Red;
+                    lblErrorHandler.Text = " You can not click 'Years' or 'Months' ";
+                    
                 }
                 else
                 {
+                    lblTitle.BackColor = System.Drawing.Color.Red;
+                    lblErrorHandler.ForeColor = System.Drawing.Color.Red;
+                    lblErrorHandler.Text = " * ERROR * ";
                     // Display error
                     MessageBox.Show(ex.Message);
                 }
@@ -93,6 +111,8 @@ namespace FinancePrograms
             tbLoanAsk.Text = " ";
             listBox1.Items.Clear();
             comboBox2.Text = " ";
+            lblTitle.BackColor = System.Drawing.Color.LightBlue;
+            lblErrorHandler.Text = " ";
         }
 
         private void button3_Click(object sender, EventArgs e)

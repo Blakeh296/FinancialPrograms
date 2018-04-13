@@ -34,6 +34,7 @@ namespace CompoundInterest
             double totalInterest;
             // we us little r to determine compound frequency with big r
             double R;
+            double c = 0;
             
             try
             {
@@ -55,62 +56,9 @@ namespace CompoundInterest
 
                    
                     // Number of times to compound
-                    double c = 1;
+                     c = 1;
 
-                    // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
-
-                    // R is how frequently to deposit per year
-                    R = (monthlyContribution * 6);
-                    // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * numberofYears);
-                    // interest rate divided by how often to compound
-                    double ic = INTEREST_RATE / c;
-
-                    // Body of the left side of the equation
-                    double body = 1 + ic;
-                    // exponent for the left side of the equation
-                    double exponent = numberofYears * c;
-                    // using math.pow to execute the math in the proper order and to save all that in one variable
-                    double Body1 = P * Math.Pow(body, exponent);
-                    // we reuse the math.pow to save the same results again seperate from the first
-                    double body2first = Math.Pow(body, exponent);
-                    // minus one after the exponent is calculated
-                    double subtract = body2first - 1;
-                    // multiply that by the yearly deposit 
-                    double body2 = R * subtract;
-                    // put the right half of the equation together, and divide by the demoninator
-                    double rightfinal = body2 / ic;
-                    // add the left and right half of the formula together
-                    double FV = Body1 + rightfinal;
-
-
-
-                    totalInterest = FV - (P + totalContribution);
-
-                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
-                    listBox1.Items.Add("Predicted Account Value  :");
-                    // CONVERSION CLASS IS OUTPUT HERE
-                    listBox1.Items.Add(conversion.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Total Interest earned  :");
-                    listBox1.Items.Add(totalInterest.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Total Deposited Money :");
-                    listBox1.Items.Add(totalContribution.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Account Math :");
-                    listBox1.Items.Add(P.ToString("c") + " + " + totalContribution.ToString("c") + " + " + totalInterest.ToString("c"));
-                    // AND HERE
-                    listBox1.Items.Add(" = " + conversion.ToString("c"));
-                    listBox1.Items.Add(" ");
-
-                    // display text
-                    lblErrorHandler.Text = " ! Success !";
-                    // make  sure the text isnt red
-                    lblErrorHandler.ForeColor = System.Drawing.Color.Black;
-                    // change title header color
-                    label6.BackColor = System.Drawing.Color.LightGreen;
+                    
                 }
                 else if (cbTimesPerYear.Text == "Bi - Annual")
                 {
@@ -118,124 +66,18 @@ namespace CompoundInterest
                     lblErrorHandler.Visible = true;
 
                     // Number of times to compound
-                    double c = 2;
+                     c = 2;
 
-                    // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
-
-                    // R is how frequently to deposit per year
-                    R = (monthlyContribution * 6);
-                    // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * numberofYears);
-                    // interest rate divided by how often to compound
-                    double ic = INTEREST_RATE / c;
-
-                    // Body of the left side of the equation
-                    double body = 1 + ic;
-                    // exponent for the left side of the equation
-                    double exponent = numberofYears * c;
-                    // using math.pow to execute the math in the proper order and to save all that in one variable
-                    double Body1 = P * Math.Pow(body, exponent);
-                    // we reuse the math.pow to save the same results again seperate from the first
-                    double body2first = Math.Pow(body, exponent);
-                    // minus one after the exponent is calculated
-                    double subtract = body2first - 1;
-                    // multiply that by the yearly deposit 
-                    double body2 = R * subtract;
-                    // put the right half of the equation together, and divide by the demoninator
-                    double rightfinal = body2 / ic;
-                    // add the left and right half of the formula together
-                    double FV = Body1 + rightfinal;
-
-
-
-                    totalInterest = FV - (P + totalContribution);
-
-                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
-                    listBox1.Items.Add("Predicted Account Value  :");
-                    // CONVERSION CLASS IS OUTPUT HERE
-                    listBox1.Items.Add(conversion.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Total Interest earned  :");
-                    listBox1.Items.Add(totalInterest.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Total Deposited Money :");
-                    listBox1.Items.Add(totalContribution.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Account Math :");
-                    listBox1.Items.Add(P.ToString("c") + " + " + totalContribution.ToString("c") + " + " + totalInterest.ToString("c"));
-                    // AND HERE
-                    listBox1.Items.Add(" = " + conversion.ToString("c"));
-                    listBox1.Items.Add(" ");
-
-                    // display text
-                    lblErrorHandler.Text = " ! Success !";
-                    // make  sure the text isnt red
-                    lblErrorHandler.ForeColor = System.Drawing.Color.Black;
-                    // change title header color
-                    label6.BackColor = System.Drawing.Color.LightGreen;
+                    
                 }
                 else if (cbTimesPerYear.Text == "Quarterly")
                 {
 
                     lblErrorHandler.Visible = true;
                     // number of times to compound
-                    double c = 4;
+                     c = 4;
 
-                    // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
-                    double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
-
-                    // R is how frequently to deposit per year
-                    R = (monthlyContribution * 6);
-                    // totalContribution is how much money you would have deposited without interest
-                    totalContribution = (R * numberofYears);
-                    // interest rate divided by how often to compound
-                    double ic = INTEREST_RATE / c;
-
-                    // Body of the left side of the equation
-                    double body = 1 + ic;
-                    // exponent for the left side of the equation
-                    double exponent = numberofYears * c;
-                    // using math.pow to execute the math in the proper order and to save all that in one variable
-                    double Body1 = P * Math.Pow(body, exponent);
-                    // we reuse the math.pow to save the same results again seperate from the first
-                    double body2first = Math.Pow(body, exponent);
-                    // minus one after the exponent is calculated
-                    double subtract = body2first - 1;
-                    // multiply that by the yearly deposit 
-                    double body2 = R * subtract;
-                    // put the right half of the equation together, and divide by the demoninator
-                    double rightfinal = body2 / ic;
-                    // add the left and right half of the formula together
-                    double FV = Body1 + rightfinal;
-
-
-
-                    totalInterest = FV - (P + totalContribution);
-
-                    listBox1.Items.Add("< Calculations for " + numberofYears.ToString() + " years > " + cbTimesPerYear.Text);
-                    listBox1.Items.Add("Predicted Account Value  :");
-                    // CONVERSION CLASS IS OUTPUT HERE
-                    listBox1.Items.Add(conversion.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Total Interest earned  :");
-                    listBox1.Items.Add(totalInterest.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Total Deposited Money :");
-                    listBox1.Items.Add(totalContribution.ToString("c"));
-                    listBox1.Items.Add(" ");
-                    listBox1.Items.Add("Account Math :");
-                    listBox1.Items.Add(P.ToString("c") + " + " + totalContribution.ToString("c") + " + " + totalInterest.ToString("c"));
-                    // AND HERE
-                    listBox1.Items.Add(" = " + conversion.ToString("c"));
-                    listBox1.Items.Add(" ");
-
-                    // display text
-                    lblErrorHandler.Text = " ! Success !";
-                    // make  sure the text isnt red
-                    lblErrorHandler.ForeColor = System.Drawing.Color.Black;
-                    // change title header color
-                    label6.BackColor = System.Drawing.Color.LightGreen;
+                    
                 }
                 else if (cbTimesPerYear.Text == "Monthly")
                 {
@@ -243,9 +85,12 @@ namespace CompoundInterest
 
 
                     // number of times to compound
-                    double c = 12;
+                     c = 12;
 
-                    // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
+                    
+                }
+
+                // THE VARIABLE BELOW IS USED FOR MY OUTPUT, I KEPT THE CODE FOR MY OTHER OUTPUTS
                     double conversion = CompoundInterest.CpInterestConversion(P, numberofYears, INTEREST_RATE, monthlyContribution, c);
 
                     // R is how frequently to deposit per year
@@ -299,9 +144,6 @@ namespace CompoundInterest
                     lblErrorHandler.ForeColor = System.Drawing.Color.Black;
                     // change title header color
                     label6.BackColor = System.Drawing.Color.LightGreen;
-                }
-
-
                 
             }
            catch (Exception ex)
@@ -365,5 +207,7 @@ namespace CompoundInterest
             // set the back color to the title header
             label6.BackColor = System.Drawing.Color.LightBlue;
         }
+
+        
     }
 }

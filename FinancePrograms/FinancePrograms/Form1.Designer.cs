@@ -42,25 +42,27 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.lblStartDate = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbLoanAsk
             // 
-            this.tbLoanAsk.Location = new System.Drawing.Point(122, 145);
+            this.tbLoanAsk.Location = new System.Drawing.Point(122, 177);
             this.tbLoanAsk.Name = "tbLoanAsk";
             this.tbLoanAsk.Size = new System.Drawing.Size(100, 20);
             this.tbLoanAsk.TabIndex = 0;
             // 
             // tbDownPayment
             // 
-            this.tbDownPayment.Location = new System.Drawing.Point(122, 175);
+            this.tbDownPayment.Location = new System.Drawing.Point(122, 207);
             this.tbDownPayment.Name = "tbDownPayment";
             this.tbDownPayment.Size = new System.Drawing.Size(100, 20);
             this.tbDownPayment.TabIndex = 1;
             // 
             // tbInterest
             // 
-            this.tbInterest.Location = new System.Drawing.Point(122, 226);
+            this.tbInterest.Location = new System.Drawing.Point(122, 258);
             this.tbInterest.Name = "tbInterest";
             this.tbInterest.Size = new System.Drawing.Size(100, 20);
             this.tbInterest.TabIndex = 3;
@@ -69,7 +71,7 @@
             // 
             this.lblLoanAsk.AutoSize = true;
             this.lblLoanAsk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoanAsk.Location = new System.Drawing.Point(27, 146);
+            this.lblLoanAsk.Location = new System.Drawing.Point(27, 178);
             this.lblLoanAsk.Name = "lblLoanAsk";
             this.lblLoanAsk.Size = new System.Drawing.Size(85, 16);
             this.lblLoanAsk.TabIndex = 4;
@@ -79,7 +81,7 @@
             // 
             this.lblDownPayment.AutoSize = true;
             this.lblDownPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDownPayment.Location = new System.Drawing.Point(8, 175);
+            this.lblDownPayment.Location = new System.Drawing.Point(8, 207);
             this.lblDownPayment.Name = "lblDownPayment";
             this.lblDownPayment.Size = new System.Drawing.Size(104, 16);
             this.lblDownPayment.TabIndex = 5;
@@ -89,7 +91,7 @@
             // 
             this.lblInterest.AutoSize = true;
             this.lblInterest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInterest.Location = new System.Drawing.Point(23, 227);
+            this.lblInterest.Location = new System.Drawing.Point(23, 259);
             this.lblInterest.Name = "lblInterest";
             this.lblInterest.Size = new System.Drawing.Size(89, 16);
             this.lblInterest.TabIndex = 7;
@@ -97,7 +99,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(147, 252);
+            this.button1.Location = new System.Drawing.Point(147, 317);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -114,7 +116,7 @@
             this.listBox1.Location = new System.Drawing.Point(3, 70);
             this.listBox1.Name = "listBox1";
             this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listBox1.Size = new System.Drawing.Size(219, 68);
+            this.listBox1.Size = new System.Drawing.Size(219, 100);
             this.listBox1.TabIndex = 9;
             // 
             // comboBox1
@@ -123,7 +125,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Years",
             "Months"});
-            this.comboBox1.Location = new System.Drawing.Point(11, 199);
+            this.comboBox1.Location = new System.Drawing.Point(11, 231);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 10;
@@ -168,14 +170,14 @@
             "300",
             "360",
             "420"});
-            this.comboBox2.Location = new System.Drawing.Point(122, 201);
+            this.comboBox2.Location = new System.Drawing.Point(122, 233);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(100, 21);
             this.comboBox2.TabIndex = 13;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(66, 252);
+            this.button2.Location = new System.Drawing.Point(66, 317);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 14;
@@ -185,7 +187,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(147, 281);
+            this.button3.Location = new System.Drawing.Point(147, 346);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 15;
@@ -193,11 +195,30 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // lblStartDate
+            // 
+            this.lblStartDate.Location = new System.Drawing.Point(122, 284);
+            this.lblStartDate.Name = "lblStartDate";
+            this.lblStartDate.Size = new System.Drawing.Size(100, 20);
+            this.lblStartDate.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(38, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 16);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Start Date :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(229, 314);
+            this.ClientSize = new System.Drawing.Size(229, 377);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblStartDate);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox2);
@@ -236,6 +257,8 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox lblStartDate;
+        private System.Windows.Forms.Label label1;
     }
 }
 

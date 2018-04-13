@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morgage Calculator", "FinancePrograms\Morgage Calculator.csproj", "{C0A443B0-EED2-4AB1-98EE-3D01EFF64E52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorgageCalculator", "FinancePrograms\MorgageCalculator.csproj", "{C0A443B0-EED2-4AB1-98EE-3D01EFF64E52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompoundInterest", "CompoundInterest\CompoundInterest.csproj", "{D21737D4-9F6B-4277-A390-9FBEC52B6D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu", "MainMenu\MainMenu.csproj", "{02C072C7-2634-4B20-BBAE-1AF892E3E82E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D21737D4-9F6B-4277-A390-9FBEC52B6D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D21737D4-9F6B-4277-A390-9FBEC52B6D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D21737D4-9F6B-4277-A390-9FBEC52B6D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C072C7-2634-4B20-BBAE-1AF892E3E82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C072C7-2634-4B20-BBAE-1AF892E3E82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C072C7-2634-4B20-BBAE-1AF892E3E82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C072C7-2634-4B20-BBAE-1AF892E3E82E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

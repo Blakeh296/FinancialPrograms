@@ -1,0 +1,16 @@
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\MainMenu.exe
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\MainMenu.pdb
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\CompoundInterest.exe
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\FinancePrograms.exe
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\CompoundInterest.pdb
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\CompoundInterest.exe.config
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\FinancePrograms.pdb
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\bin\Debug\FinancePrograms.exe.config
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.csprojResolveAssemblyReference.cache
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.Form1.resources
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.Properties.Resources.resources
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.exe
+C:\Users\Cyberadmin\Desktop\FinancialPrograms\FinancePrograms\MainMenu\obj\Debug\MainMenu.pdb
